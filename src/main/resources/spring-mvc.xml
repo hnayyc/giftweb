@@ -12,11 +12,13 @@
 
 
 	<!-- 扫描带注解的实体生成单例bean-->
-    <context:component-scan base-package="com.hnayyc.giftweb.webapp.controller" />
+    <context:component-scan base-package="com.hnayyc.giftweb.controller" />
 
 	<!-- 加载静态资源配置 -->
 	<mvc:default-servlet-handler/>
-	<mvc:resources location="plugins/" mapping="plugins/**" />
+
+	<!-- 暂时没有创建类似UDP框架的plugins目录 -->
+	<!--<mvc:resources location="plugins/" mapping="plugins/**" />-->
 
 	<!-- <mvc:annotation-driven/> -->
     <mvc:annotation-driven conversion-service="conversionService">  

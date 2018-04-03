@@ -15,7 +15,7 @@
 	
     <context:property-placeholder location="classpath:application.properties" />
 
-    <context:component-scan  base-package="com.hnayyc.giftweb.deskapp,com.hnayyc.giftweb.webapp" />
+    <context:component-scan  base-package="com.hnayyc.giftweb" />
      
     <tx:annotation-driven transaction-manager="transactionManager"/>
      
